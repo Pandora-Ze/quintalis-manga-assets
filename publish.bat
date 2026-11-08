@@ -24,7 +24,7 @@ if not errorlevel 1 (
 )
 
 echo Changements detectes :
-git diff --cached --stat
+git --no-pager diff --cached --stat
 git commit -m "Mise a jour des pages Scantrad"
 if errorlevel 1 goto git_error
 
